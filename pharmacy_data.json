@@ -1,0 +1,214 @@
+{
+  "next_ids": {
+    "medicine": 8,
+    "customer": 2,
+    "sale": 3,
+    "sale_item": 3,
+    "user": 3
+  },
+  "medicines": [
+    {
+      "id": 1,
+      "code": "MED-001",
+      "name": "Paracetamol 650",
+      "category": "Tablet",
+      "batch_no": "PCM2401",
+      "expiry_date": "2027-05-27",
+      "supplier": "Sun Pharma",
+      "unit": "Strip",
+      "quantity": 120,
+      "min_stock": 20,
+      "purchase_price": 18.5,
+      "selling_price": 24.0,
+      "gst_percent": 5,
+      "rack": "A1",
+      "updated_at": "2026-04-02T20:55:13",
+      "mrp": 24.0
+    },
+    {
+      "id": 2,
+      "code": "MED-002",
+      "name": "Azithromycin 500",
+      "category": "Antibiotic",
+      "batch_no": "AZI988",
+      "expiry_date": "2026-11-28",
+      "supplier": "Cipla",
+      "unit": "Strip",
+      "quantity": 42,
+      "min_stock": 12,
+      "purchase_price": 82.0,
+      "selling_price": 108.0,
+      "gst_percent": 12,
+      "rack": "A2",
+      "updated_at": "2026-04-02T20:55:13",
+      "mrp": 108.0
+    },
+    {
+      "id": 3,
+      "code": "MED-003",
+      "name": "Pantoprazole",
+      "category": "Tablet",
+      "batch_no": "PAN111",
+      "expiry_date": "2026-09-29",
+      "supplier": "Alkem",
+      "unit": "Strip",
+      "quantity": 15,
+      "min_stock": 15,
+      "purchase_price": 54.0,
+      "selling_price": 71.0,
+      "gst_percent": 12,
+      "rack": "B1",
+      "updated_at": "2026-04-02T21:17:27",
+      "mrp": 71.0
+    },
+    {
+      "id": 4,
+      "code": "MED-004",
+      "name": "ORS Sachet",
+      "category": "General",
+      "batch_no": "ORS501",
+      "expiry_date": "2027-09-24",
+      "supplier": "FDC",
+      "unit": "Piece",
+      "quantity": 9,
+      "min_stock": 20,
+      "purchase_price": 12.0,
+      "selling_price": 18.0,
+      "gst_percent": 5,
+      "rack": "C4",
+      "updated_at": "2026-04-02T20:55:13",
+      "mrp": 18.0
+    },
+    {
+      "batch_no": "B1",
+      "category": "Tablet",
+      "code": "MED-999",
+      "expiry_date": "2027-01-01",
+      "gst_percent": 5,
+      "min_stock": 2,
+      "name": "Test Med",
+      "purchase_price": 11,
+      "quantity": 9,
+      "rack": "Z9",
+      "selling_price": 15,
+      "supplier": "Demo",
+      "unit": "Strip",
+      "id": 5,
+      "updated_at": "2026-04-02T20:55:36",
+      "mrp": 15.0
+    },
+    {
+      "code": "0001",
+      "name": "test med",
+      "category": "taBLET",
+      "batch_no": "NA",
+      "expiry_date": "",
+      "supplier": "",
+      "unit": "1",
+      "rack": "1",
+      "quantity": 10,
+      "min_stock": 4,
+      "purchase_price": 200,
+      "selling_price": 300,
+      "gst_percent": 0,
+      "id": 6,
+      "updated_at": "2026-04-02T21:25:33",
+      "mrp": 300.0
+    },
+    {
+      "code": "na",
+      "name": "dolo",
+      "category": "tab",
+      "batch_no": "",
+      "expiry_date": "",
+      "supplier": "b",
+      "unit": "Strip",
+      "rack": "",
+      "quantity": 0,
+      "min_stock": 25,
+      "purchase_price": 10,
+      "selling_price": 2,
+      "gst_percent": 0,
+      "id": 7,
+      "updated_at": "2026-04-02T21:34:38",
+      "mrp": 2.0
+    }
+  ],
+  "customers": [
+    {
+      "id": 1,
+      "name": "Walk-in Customer",
+      "phone": "",
+      "address": "Gopamau Hardoi",
+      "created_at": "2026-04-02T20:55:13"
+    }
+  ],
+  "sales": [
+    {
+      "id": 1,
+      "bill_no": "MMS-20260402-001",
+      "customer_id": null,
+      "customer_name": "Walk-in Customer",
+      "gross_total": 15.0,
+      "gst_total": 0.0,
+      "discount_total": 0.0,
+      "net_total": 15.0,
+      "payment_mode": "Cash",
+      "created_at": "2026-04-02T20:55:36"
+    },
+    {
+      "id": 2,
+      "bill_no": "MMS-20260402-002",
+      "customer_id": null,
+      "customer_name": "Walk-in Customer",
+      "gross_total": 71.0,
+      "gst_total": 8.52,
+      "discount_total": 0.0,
+      "net_total": 79.52,
+      "payment_mode": "Cash",
+      "created_at": "2026-04-02T21:17:27"
+    }
+  ],
+  "sale_items": [
+    {
+      "id": 1,
+      "sale_id": 1,
+      "medicine_id": 5,
+      "medicine_name": "Test Med",
+      "quantity": 1,
+      "unit_price": 15.0,
+      "gst_percent": 5.0,
+      "discount_percent": 0.0,
+      "line_total": 15.0
+    },
+    {
+      "id": 2,
+      "sale_id": 2,
+      "medicine_id": 3,
+      "medicine_name": "Pantoprazole",
+      "quantity": 1,
+      "unit_price": 71.0,
+      "gst_percent": 12.0,
+      "discount_percent": 0.0,
+      "line_total": 79.52
+    }
+  ],
+  "pharmacy": {
+    "name": "Mirza Medical Store",
+    "address": "Gopamau Hardoi",
+    "phone": "888",
+    "owner_name": "Owner"
+  },
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "1234",
+      "role": "admin",
+      "display_name": "Admin",
+      "phone": "999",
+      "active": true,
+      "created_at": "2026-04-02T21:59:15"
+    }
+  ]
+}

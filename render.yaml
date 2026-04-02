@@ -1,0 +1,15 @@
+﻿services:
+  - type: web
+    name: mirza-medical-store
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn -w 2 -b 0.0.0.0:$PORT app:app
+    envVars:
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DATA_PATH
+        value: /var/data/pharmacy_data.json
+    disks:
+      - name: pharmacy-data
+        mountPath: /var/data
+        sizeGB: 1
